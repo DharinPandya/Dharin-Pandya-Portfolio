@@ -1,0 +1,1031 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Dharin Pandya | Computer Science Student & Full Stack Developer</title>
+    <meta name="description" content="Personal portfolio of Dharin Pandya — Computer Science & Engineering student at IITE, Indus University, Ahmedabad. Aspiring Full Stack Developer with 1 year project experience in Python, C/C++, JavaScript, TypeScript, and Databases." />
+    <meta name="keywords" content="Dharin Pandya, Computer Science Student, Full Stack Developer, Fresher, Python, C++, JavaScript, TypeScript, Database, Ahmedabad, Indus University" />
+    <meta name="author" content="Dharin Pandya" />
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Dharin Pandya | Computer Science Student & Full Stack Developer" />
+    <meta property="og:description" content="Portfolio of Dharin Pandya — Computer Science Student & Aspiring Full Stack Developer (Fresher, 1 Year Project Exp)." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dharin Pandya | Computer Science Student & Full Stack Developer" />
+    <meta name="twitter:description" content="Portfolio of Dharin Pandya — Computer Science Student & Aspiring Full Stack Developer." />
+
+    <!-- Favicon (Embedded High-Res SVG) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='25' fill='%232563eb'/%3E%3Ctext x='50' y='65' font-family='sans-serif' font-size='50' font-weight='900' fill='white' text-anchor='middle'%3EDP%3C/text%3E%3C/svg%3E" />
+
+    <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <!-- Bootstrap Icons 1.11.3 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- Custom Portfolio Stylesheet -->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader-content">
+        <div class="loader-badge">DP</div>
+        <div style="font-weight: 700; font-size: 1.1rem; letter-spacing: 0.05em;">DHARIN PANDYA</div>
+        <div class="loader-bar">
+          <div class="loader-progress"></div>
+        </div>
+        <div style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.35rem;">Loading Portfolio...</div>
+      </div>
+    </div>
+
+    <!-- Ambient Visual Canvas & Atmospheric Orbs -->
+    <div class="ambient-bg" aria-hidden="true">
+      <canvas id="particleCanvas"></canvas>
+      <div class="ambient-orb orb-1"></div>
+      <div class="ambient-orb orb-2"></div>
+      <div class="ambient-orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Header & Navigation Bar (Top Bar Contract: 3 Zones) -->
+    <header>
+      <nav id="mainNavbar" class="navbar navbar-expand-lg main-navbar">
+        <div class="container">
+          <!-- Zone 1: Single Text Element Brand Wordmark -->
+          <a class="navbar-brand" href="#home">
+            Dharin<span class="gradient-text">.dev</span>
+          </a>
+
+          <!-- Mobile Toggle, Resume & Theme Toggle on Mobile -->
+          <div class="d-flex align-items-center gap-2 d-lg-none">
+            <button type="button" class="btn-custom btn-glass btn-sm-custom py-1 px-2.5" id="btn-mobile-resume" title="Download Resume">
+              <i class="bi bi-file-earmark-arrow-down"></i> Resume
+            </button>
+            <button class="btn-theme-toggle" id="theme-toggle-btn-mobile" aria-label="Toggle dark/light theme">
+              <i class="bi bi-sun-fill"></i>
+            </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <!-- Zone 2: Navigation Links -->
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#certificates-projects">Certificates &amp; Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+
+            <!-- Zone 3: Primary Actions (Theme Toggle, GitHub & Contact CTA) -->
+            <div class="d-none d-lg-flex align-items-center gap-3">
+              <button class="btn-theme-toggle" id="theme-toggle-btn" aria-label="Toggle dark and light color mode" title="Toggle theme">
+                <i class="bi bi-sun-fill" id="theme-icon"></i>
+              </button>
+              <a href="https://github.com/DharinPandya" target="_blank" rel="noopener noreferrer" class="btn-custom btn-glass btn-sm-custom" aria-label="Dharin Pandya GitHub Profile">
+                <i class="bi bi-github"></i> GitHub
+              </a>
+              <a href="#contact" class="btn-custom btn-primary-gradient btn-sm-custom">
+                <i class="bi bi-send-fill"></i> Let's Talk
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero-section">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Hero Left Column: Headline, Bio & CTAs -->
+            <div class="col-lg-7">
+              <div class="availability-badge">
+                <span class="status-dot"></span>
+                <span>Computer Science Student · Fresher Open to Roles</span>
+              </div>
+
+              <h1 class="hero-headline">
+                Hi, I'm <span class="gradient-text">Dharin Pandya</span>
+              </h1>
+
+              <div class="typewriter-wrapper">
+                <span>I am a</span>
+                <span id="typewriter" class="typewriter-text"></span>
+                <span class="typewriter-cursor">|</span>
+              </div>
+
+              <p class="hero-bio">
+                Computer Science &amp; Engineering student at IITE, Indus University, Ahmedabad. Passionate about software development, Data Structures &amp; Algorithms, and building web applications with Python, C/C++, JavaScript, TypeScript, HTML/CSS, and Databases.
+              </p>
+
+              <div class="d-flex flex-wrap align-items-center gap-3">
+                <a href="#certificates-projects" class="btn-custom btn-primary-gradient">
+                  <i class="bi bi-briefcase-fill"></i> View Certificates &amp; Projects
+                </a>
+                <a href="#contact" class="btn-custom btn-glass">
+                  <i class="bi bi-chat-dots-fill"></i> Let's Talk
+                </a>
+                <button type="button" id="btn-hero-download-cv" class="btn-custom btn-glass" title="Download Official CV">
+                  <i class="bi bi-download"></i> Download CV
+                </button>
+              </div>
+
+              <!-- Metadata & Quick Trust Factors -->
+              <div class="hero-meta">
+                <span class="meta-item"><i class="bi bi-geo-alt-fill text-primary"></i> Ahmedabad, Gujarat</span>
+                <span class="meta-sep">/</span>
+                <span class="meta-item"><i class="bi bi-mortarboard-fill text-primary"></i> B.Tech CSE Student</span>
+                <span class="meta-sep">/</span>
+                <span class="meta-item"><i class="bi bi-code-slash text-primary"></i> Python · C/C++ · JS · SQL</span>
+              </div>
+
+              <!-- Social Links -->
+              <div class="hero-socials">
+                <a href="https://github.com/DharinPandya" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Dharin Pandya GitHub Profile" title="GitHub">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/dharinpandya" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Dharin Pandya LinkedIn Profile" title="LinkedIn">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="mailto:dharinpandya.24.cse@iite.indusuni.ac.in" class="social-icon-btn" aria-label="Send Email to Dharin Pandya" title="Email Dharin">
+                  <i class="bi bi-envelope-fill"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Hero Right Column: Profile Showcase & Compact 2-in-1 Photo Control -->
+            <div class="col-lg-5 hero-visual-col">
+              <div class="profile-card-clean">
+                <!-- Avatar Frame with Gradient Rim -->
+                <div class="profile-avatar-frame">
+                  <div class="profile-avatar-inner">
+                    <img id="profile-img" class="profile-avatar-img" alt="Dharin Pandya - Computer Science Student Portrait" />
+                  </div>
+
+                  <!-- Compact 2-in-1 Photo Control Badge -->
+                  <div class="photo-control-pill" title="Profile Photo Controls">
+                    <button type="button" class="photo-mini-btn" id="btn-change-photo" title="Upload new photo" aria-label="Upload photo">
+                      <i class="bi bi-camera-fill"></i>
+                    </button>
+                    <span class="photo-mini-sep"></span>
+                    <button type="button" class="photo-mini-btn" id="btn-remove-photo" title="Reset to default monogram" aria-label="Reset photo">
+                      <i class="bi bi-arrow-counterclockwise"></i>
+                    </button>
+                    <input type="file" id="photo-file-input" accept="image/*" hidden aria-hidden="true" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section-wrapper">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+              <span class="section-kicker">About Me</span>
+              <h2 class="section-title">Computer Science Student &amp; Aspiring Full Stack Developer</h2>
+              <p class="section-desc">
+                Building a solid foundation in computer engineering, algorithmic thinking, and practical software development.
+              </p>
+            </div>
+          </div>
+
+          <div class="row align-items-center g-4">
+            <!-- Biography Card -->
+            <div class="col-lg-6">
+              <div class="glass-card">
+                <h3 class="h4 mb-3">Academic Background &amp; Engineering Focus</h3>
+                <p class="text-secondary mb-3">
+                  I am a Computer Science &amp; Engineering student at the Institute of Technology and Engineering (IITE), Indus University in Ahmedabad, Gujarat. As a passionate fresher with 1 year of hands-on project experience, I focus on writing clean, efficient code and understanding core systems from the ground up.
+                </p>
+                <p class="text-secondary mb-4">
+                  My technical skillset spans Python scripting, C/C++ problem solving, modern JavaScript/TypeScript, relational database management (SQL/MySQL), and semantic HTML/CSS web interfaces.
+                </p>
+
+                <!-- Key Strengths -->
+                <div class="row g-3 mb-4">
+                  <div class="col-sm-6">
+                    <div class="d-flex align-items-center gap-2">
+                      <i class="bi bi-check2-circle text-primary fs-5"></i>
+                      <span class="fw-semibold">Python &amp; C/C++ Programming</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="d-flex align-items-center gap-2">
+                      <i class="bi bi-check2-circle text-primary fs-5"></i>
+                      <span class="fw-semibold">Web Development (HTML/CSS/JS)</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="d-flex align-items-center gap-2">
+                      <i class="bi bi-check2-circle text-primary fs-5"></i>
+                      <span class="fw-semibold">Database Management (SQL)</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="d-flex align-items-center gap-2">
+                      <i class="bi bi-check2-circle text-primary fs-5"></i>
+                      <span class="fw-semibold">Data Structures &amp; Algorithms (DSA)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Resume Download & Upload Actions -->
+                <div class="d-flex flex-wrap gap-2 pt-2 border-top border-secondary-subtle">
+                  <button type="button" id="btn-download-cv" class="btn-custom btn-primary-gradient btn-sm-custom">
+                    <i class="bi bi-file-earmark-arrow-down-fill"></i> Download Resume / CV
+                  </button>
+                  <button type="button" id="btn-upload-cv" class="btn-custom btn-glass btn-sm-custom" title="Upload custom PDF resume">
+                    <i class="bi bi-upload"></i> Upload Custom CV (PDF)
+                  </button>
+                  <input type="file" id="cv-file-input" accept="application/pdf" hidden aria-hidden="true" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Details & Animated Statistics -->
+            <div class="col-lg-6">
+              <!-- Location & Profile Meta Card -->
+              <div class="glass-card mb-4">
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <small class="text-secondary d-block">Location</small>
+                    <strong class="d-block">Ahmedabad, Gujarat</strong>
+                    <span class="text-muted small">Open to Remote / On-Site</span>
+                  </div>
+                  <div class="col-sm-6">
+                    <small class="text-secondary d-block">Primary Email</small>
+                    <strong class="d-block text-truncate" title="dharinpandya.24.cse@iite.indusuni.ac.in">
+                      dharinpandya.24.cse@iite.indusuni.ac.in
+                    </strong>
+                  </div>
+                  <div class="col-sm-6">
+                    <small class="text-secondary d-block">Education</small>
+                    <strong class="d-block">B.Tech in CSE</strong>
+                    <span class="text-muted small">IITE, Indus University</span>
+                  </div>
+                  <div class="col-sm-6">
+                    <small class="text-secondary d-block">Status</small>
+                    <strong class="d-block text-success">Student / Fresher (1 Yr Project Exp)</strong>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Animated Statistics Grid -->
+              <div id="stats-grid" class="stats-grid">
+                <div class="stat-card">
+                  <div class="stat-number tabular-nums counter-val" data-target="1" data-suffix=" Year">0 Year</div>
+                  <p class="stat-label">Project Exp.</p>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-number tabular-nums counter-val" data-target="10" data-suffix="+">0+</div>
+                  <p class="stat-label">Projects &amp; Labs</p>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-number tabular-nums counter-val" data-target="6" data-suffix=" Core">0 Core</div>
+                  <p class="stat-label">Tech Stacks</p>
+                </div>
+                <div class="stat-card">
+                  <div class="stat-number tabular-nums counter-val" data-target="100" data-suffix="%">0%</div>
+                  <p class="stat-label">Dedication</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section-wrapper">
+        <div class="container" id="skills-section">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+              <span class="section-kicker">Core Technical Skills</span>
+              <h2 class="section-title">Programming Languages &amp; Fundamentals</h2>
+              <p class="section-desc">
+                Core competencies developed through coursework, projects, and continuous problem-solving.
+              </p>
+            </div>
+          </div>
+
+          <!-- Skills Cards Grid -->
+          <div class="row g-3 justify-content-center">
+            <!-- 1. Python -->
+            <div class="col-md-6 col-lg-3">
+              <div class="skill-card">
+                <div class="skill-header">
+                  <div class="skill-info">
+                    <i class="bi bi-filetype-py skill-icon text-warning"></i>
+                    <h3 class="skill-title">Python</h3>
+                  </div>
+                  <span class="skill-pct tabular-nums">90%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" data-width="90"></div>
+                </div>
+                <small class="text-secondary">Scripting, OOP, Algorithms</small>
+              </div>
+            </div>
+
+            <!-- 2. JavaScript -->
+            <div class="col-md-6 col-lg-3">
+              <div class="skill-card">
+                <div class="skill-header">
+                  <div class="skill-info">
+                    <i class="bi bi-filetype-js skill-icon text-warning"></i>
+                    <h3 class="skill-title">JavaScript</h3>
+                  </div>
+                  <span class="skill-pct tabular-nums">88%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" data-width="88"></div>
+                </div>
+                <small class="text-secondary">ES6+, DOM, Async/Await</small>
+              </div>
+            </div>
+
+            <!-- 3. C / C++ -->
+            <div class="col-md-6 col-lg-3">
+              <div class="skill-card">
+                <div class="skill-header">
+                  <div class="skill-info">
+                    <i class="bi bi-filetype-cs skill-icon text-info"></i>
+                    <h3 class="skill-title">C / C++</h3>
+                  </div>
+                  <span class="skill-pct tabular-nums">85%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" data-width="85"></div>
+                </div>
+                <small class="text-secondary">Pointers, Memory, DSA</small>
+              </div>
+            </div>
+
+            <!-- 4. TypeScript -->
+            <div class="col-md-6 col-lg-3">
+              <div class="skill-card">
+                <div class="skill-header">
+                  <div class="skill-info">
+                    <i class="bi bi-filetype-tsx skill-icon text-primary"></i>
+                    <h3 class="skill-title">TypeScript</h3>
+                  </div>
+                  <span class="skill-pct tabular-nums">82%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" data-width="82"></div>
+                </div>
+                <small class="text-secondary">Static Typing, Interfaces</small>
+              </div>
+            </div>
+
+            <!-- 5. Database (SQL) -->
+            <div class="col-md-6 col-lg-3">
+              <div class="skill-card">
+                <div class="skill-header">
+                  <div class="skill-info">
+                    <i class="bi bi-database-check skill-icon text-success"></i>
+                    <h3 class="skill-title">Database (SQL / MySQL)</h3>
+                  </div>
+                  <span class="skill-pct tabular-nums">86%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" data-width="86"></div>
+                </div>
+                <small class="text-secondary">Queries, Schema, Normalization</small>
+              </div>
+            </div>
+
+            <!-- 6. HTML / CSS -->
+            <div class="col-md-6 col-lg-3">
+              <div class="skill-card">
+                <div class="skill-header">
+                  <div class="skill-info">
+                    <i class="bi bi-filetype-html skill-icon text-danger"></i>
+                    <h3 class="skill-title">HTML &amp; CSS</h3>
+                  </div>
+                  <span class="skill-pct tabular-nums">92%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" data-width="92"></div>
+                </div>
+                <small class="text-secondary">HTML5, CSS3, Flexbox, Grid</small>
+              </div>
+            </div>
+
+            <!-- 7. Data Structures & Algorithms -->
+            <div class="col-md-6 col-lg-3">
+              <div class="skill-card">
+                <div class="skill-header">
+                  <div class="skill-info">
+                    <i class="bi bi-diagram-2-fill skill-icon text-primary"></i>
+                    <h3 class="skill-title">Data Structures (DSA)</h3>
+                  </div>
+                  <span class="skill-pct tabular-nums">84%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" data-width="84"></div>
+                </div>
+                <small class="text-secondary">Arrays, Trees, Searching, Sorting</small>
+              </div>
+            </div>
+
+            <!-- 8. Git & GitHub -->
+            <div class="col-md-6 col-lg-3">
+              <div class="skill-card">
+                <div class="skill-header">
+                  <div class="skill-info">
+                    <i class="bi bi-git skill-icon text-danger"></i>
+                    <h3 class="skill-title">Git &amp; GitHub</h3>
+                  </div>
+                  <span class="skill-pct tabular-nums">88%</span>
+                </div>
+                <div class="skill-progress-bar">
+                  <div class="skill-progress-fill" data-width="88"></div>
+                </div>
+                <small class="text-secondary">Version Control, Commits, Branches</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="section-wrapper">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+              <span class="section-kicker">Technical Capabilities</span>
+              <h2 class="section-title">What I Build &amp; Solve</h2>
+              <p class="section-desc">
+                Applying core programming, web fundamentals, and algorithmic logic to practical software tasks.
+              </p>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <!-- Service 1 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="glass-card service-card">
+                <div class="service-icon-box">
+                  <i class="bi bi-window-stack"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>
+                  Creating responsive, interactive web applications using clean semantic HTML5, CSS3, JavaScript, and TypeScript.
+                </p>
+                <ul class="service-features-list">
+                  <li><i class="bi bi-check-circle-fill"></i> Modern JavaScript &amp; DOM Manipulation</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Clean Semantic HTML5 &amp; CSS3 Styling</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Interactive Client-Side Features</li>
+                </ul>
+                <div class="mt-auto pt-3">
+                  <a href="#contact" class="btn-custom btn-glass btn-sm-custom w-100">Contact Dharin</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="glass-card service-card">
+                <div class="service-icon-box">
+                  <i class="bi bi-filetype-py"></i>
+                </div>
+                <h3>Python Programming &amp; Scripting</h3>
+                <p>
+                  Developing Python applications, automated scripts, file processors, and core algorithmic problem solvers.
+                </p>
+                <ul class="service-features-list">
+                  <li><i class="bi bi-check-circle-fill"></i> Object-Oriented Programming (OOP)</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Data Processing &amp; File Handling</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Automated Task Scripting</li>
+                </ul>
+                <div class="mt-auto pt-3">
+                  <a href="#contact" class="btn-custom btn-glass btn-sm-custom w-100">Contact Dharin</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="glass-card service-card">
+                <div class="service-icon-box">
+                  <i class="bi bi-cpu"></i>
+                </div>
+                <h3>C / C++ Systems &amp; Problem Solving</h3>
+                <p>
+                  Writing structured, high-efficiency C and C++ code emphasizing memory management, pointers, and performance.
+                </p>
+                <ul class="service-features-list">
+                  <li><i class="bi bi-check-circle-fill"></i> Core C/C++ Algorithms</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Pointer &amp; Memory Allocation</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Structured Problem Solving</li>
+                </ul>
+                <div class="mt-auto pt-3">
+                  <a href="#contact" class="btn-custom btn-glass btn-sm-custom w-100">Contact Dharin</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="glass-card service-card">
+                <div class="service-icon-box">
+                  <i class="bi bi-database-check"></i>
+                </div>
+                <h3>Database Design &amp; Management</h3>
+                <p>
+                  Designing relational schemas, writing efficient SQL queries, and managing MySQL database tables.
+                </p>
+                <ul class="service-features-list">
+                  <li><i class="bi bi-check-circle-fill"></i> Relational Database Schema Design</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Structured SQL Queries &amp; CRUD Operations</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Data Integrity &amp; Normalization</li>
+                </ul>
+                <div class="mt-auto pt-3">
+                  <a href="#contact" class="btn-custom btn-glass btn-sm-custom w-100">Contact Dharin</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="glass-card service-card">
+                <div class="service-icon-box">
+                  <i class="bi bi-diagram-3"></i>
+                </div>
+                <h3>Data Structures &amp; Algorithms (DSA)</h3>
+                <p>
+                  Implementing data structures (arrays, linked lists, stacks, trees) and optimizing algorithm time/space complexity.
+                </p>
+                <ul class="service-features-list">
+                  <li><i class="bi bi-check-circle-fill"></i> Search &amp; Sort Implementations</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Big-O Complexity Analysis</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Competitive Programming Practice</li>
+                </ul>
+                <div class="mt-auto pt-3">
+                  <a href="#contact" class="btn-custom btn-glass btn-sm-custom w-100">Contact Dharin</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="col-lg-4 col-md-6">
+              <div class="glass-card service-card">
+                <div class="service-icon-box">
+                  <i class="bi bi-git"></i>
+                </div>
+                <h3>Version Control &amp; Team Workflows</h3>
+                <p>
+                  Managing codebases with Git, maintaining clean GitHub commits, and collaborating on repository pull requests.
+                </p>
+                <ul class="service-features-list">
+                  <li><i class="bi bi-check-circle-fill"></i> Git Branching &amp; Commit Hygiene</li>
+                  <li><i class="bi bi-check-circle-fill"></i> GitHub Repository Documentation</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Code Review &amp; Collaboration</li>
+                </ul>
+                <div class="mt-auto pt-3">
+                  <a href="#contact" class="btn-custom btn-glass btn-sm-custom w-100">Contact Dharin</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certificates & Projects Section (Interactive Grid & Modal) -->
+      <section id="certificates-projects" class="section-wrapper">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+              <span class="section-kicker">Showcase</span>
+              <h2 class="section-title">Certificates &amp; Projects</h2>
+              <p class="section-desc">
+                Practical student software engineering projects in Python &amp; MySQL and HTML &amp; CSS, alongside verified credentials.
+              </p>
+            </div>
+          </div>
+
+          <!-- Project Filter Segmented Buttons -->
+          <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All Items</button>
+            <button class="filter-btn" data-filter="python"><i class="bi bi-filetype-py text-warning me-1"></i> Python &amp; Database</button>
+            <button class="filter-btn" data-filter="web"><i class="bi bi-filetype-html text-primary me-1"></i> HTML/CSS &amp; Web</button>
+            <button class="filter-btn" data-filter="certificate"><i class="bi bi-patch-check-fill text-warning me-1"></i> Certificate</button>
+          </div>
+
+          <!-- Attached Certificate Document Showcase Banner -->
+          <div class="attached-cert-banner mb-4">
+            <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 p-3 rounded-4" style="background: var(--bg-card); border: 1px solid var(--border-glow); box-shadow: var(--shadow-glow);">
+              <div class="d-flex align-items-center gap-3">
+                <div class="service-icon-box mb-0 text-warning" style="background: rgba(245, 158, 11, 0.12); border-color: rgba(245, 158, 11, 0.3);">
+                  <i class="bi bi-file-earmark-check-fill fs-4"></i>
+                </div>
+                <div>
+                  <div class="d-flex align-items-center gap-2">
+                    <span class="badge bg-success-subtle text-success border border-success-subtle rounded-pill px-2 py-0.5" style="font-size:0.75rem;"><i class="bi bi-paperclip"></i> Attached Document</span>
+                    <small class="text-secondary" id="attached-cert-date">Awarded to Dharin Pandya · Technical Verification</small>
+                  </div>
+                  <h4 class="h6 mb-0 mt-1" id="attached-cert-title">Certificate of Achievement — Software &amp; Web Development</h4>
+                  <small class="text-muted" id="attached-cert-filename">Dharin_Pandya_Certificate.pdf</small>
+                </div>
+              </div>
+              <div class="d-flex flex-wrap gap-2">
+                <button type="button" id="btn-view-attached-cert" class="btn-custom btn-primary-gradient btn-sm-custom">
+                  <i class="bi bi-file-earmark-arrow-down-fill"></i> View &amp; Download Document
+                </button>
+                <button type="button" id="btn-attach-custom-cert" class="btn-custom btn-glass btn-sm-custom" title="Attach your own certificate file">
+                  <i class="bi bi-upload"></i> Attach Another File
+                </button>
+                <input type="file" id="attached-cert-file-input" accept="application/pdf,image/*" hidden aria-hidden="true" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Projects Dynamic Grid -->
+          <div class="row g-4" id="projects-grid">
+            <!-- Dynamically populated via js/script.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Academic Education Section -->
+      <section id="education" class="section-wrapper">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+              <span class="section-kicker">Degree &amp; Coursework</span>
+              <h2 class="section-title">Academic Education</h2>
+              <p class="section-desc">
+                Undergraduate degree curriculum, engineering fundamentals, and core academic milestones.
+              </p>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <!-- Education Card: Degree -->
+            <div class="col-lg-6">
+              <div class="glass-card h-100">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <div class="service-icon-box mb-0">
+                    <i class="bi bi-mortarboard-fill"></i>
+                  </div>
+                  <div>
+                    <span class="text-primary fw-bold small tabular-nums">2020 – 2024</span>
+                    <h3 class="h5 mb-0">B.Tech in Computer Science &amp; Engineering</h3>
+                  </div>
+                </div>
+                <h4 class="h6 text-secondary mb-2">Institute of Technology and Engineering (IITE), Indus University</h4>
+                <p class="text-secondary small mb-3">
+                  <i class="bi bi-geo-alt text-primary"></i> Ahmedabad, Gujarat
+                </p>
+                <p class="text-secondary mb-3">
+                  Undergraduate program in Computer Science and Engineering with focused coursework in Data Structures &amp; Algorithms, Database Management Systems (DBMS), Object-Oriented Software Design, Operating Systems, and Web Engineering.
+                </p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="tag-badge">Data Structures</span>
+                  <span class="tag-badge">C / C++</span>
+                  <span class="tag-badge">Python</span>
+                  <span class="tag-badge">Database (SQL)</span>
+                  <span class="tag-badge">HTML/CSS</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Coursework & Engineering Foundation Card -->
+            <div class="col-lg-6">
+              <div class="glass-card h-100">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <div class="service-icon-box mb-0 text-primary">
+                    <i class="bi bi-journal-code"></i>
+                  </div>
+                  <div>
+                    <span class="text-primary fw-bold small">Academic Highlights</span>
+                    <h3 class="h5 mb-0">Core Engineering Coursework &amp; Labs</h3>
+                  </div>
+                </div>
+
+                <div class="p-3 rounded mb-3" style="background: var(--border-subtle); border: 1px solid var(--border-glow);">
+                  <div class="d-flex align-items-center justify-content-between mb-2">
+                    <h4 class="h6 mb-0 text-primary">Computer Science Curriculum</h4>
+                    <span class="badge bg-primary-subtle text-primary border border-primary-subtle">Core Focus</span>
+                  </div>
+                  <p class="small text-secondary mb-2">
+                    Practical coursework completed in academic laboratories with emphasis on algorithmic thinking, memory management, relational schema modeling, and client-side web architecture.
+                  </p>
+                  <div class="d-flex flex-wrap gap-1 mt-2">
+                    <span class="tag-badge">DBMS &amp; MySQL</span>
+                    <span class="tag-badge">OOP in C++ &amp; Python</span>
+                    <span class="tag-badge">Operating Systems</span>
+                    <span class="tag-badge">Computer Networks</span>
+                    <span class="tag-badge">Web Tech (HTML/CSS/JS)</span>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-wrap gap-2">
+                  <button type="button" class="btn-custom btn-primary-gradient btn-sm-custom" id="btn-edu-download-cv">
+                    <i class="bi bi-file-earmark-arrow-down-fill"></i> Download Official CV
+                  </button>
+                  <a href="https://github.com/DharinPandya" target="_blank" rel="noopener noreferrer" class="btn-custom btn-glass btn-sm-custom">
+                    <i class="bi bi-github"></i> View GitHub Profile
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section-wrapper">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-8">
+              <span class="section-kicker">Get In Touch</span>
+              <h2 class="section-title">Let's Connect &amp; Collaborate</h2>
+              <p class="section-desc">
+                Looking for an enthusiastic fresher software engineer or have an interesting student project? Feel free to reach out.
+              </p>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <!-- Contact Channels (Left Column) -->
+            <div class="col-lg-5">
+              <!-- Direct Email Card -->
+              <div class="contact-info-card">
+                <div class="contact-icon-box">
+                  <i class="bi bi-envelope-at-fill"></i>
+                </div>
+                <div class="contact-info-content">
+                  <h4>Email Directly</h4>
+                  <p>
+                    <a href="mailto:dharinpandya.24.cse@iite.indusuni.ac.in" class="text-primary text-decoration-none">
+                      dharinpandya.24.cse@iite.indusuni.ac.in
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Location Card -->
+              <div class="contact-info-card">
+                <div class="contact-icon-box">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </div>
+                <div class="contact-info-content">
+                  <h4>Base Location</h4>
+                  <p>Ahmedabad, Gujarat, India</p>
+                  <small class="text-muted">Available for Internships, Fresher Roles &amp; Remote Work</small>
+                </div>
+              </div>
+
+              <!-- Status Card -->
+              <div class="contact-info-card">
+                <div class="contact-icon-box">
+                  <i class="bi bi-person-badge-fill"></i>
+                </div>
+                <div class="contact-info-content">
+                  <h4>Current Status</h4>
+                  <p>B.Tech Computer Science Student · Fresher</p>
+                  <small class="text-muted">1 Year Practical Project Experience</small>
+                </div>
+              </div>
+
+              <!-- Social Profiles Card -->
+              <div class="glass-card">
+                <h4 class="h6 mb-3">Connect on Social Platforms</h4>
+                <div class="d-flex gap-2">
+                  <a href="https://github.com/DharinPandya" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub" title="GitHub">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://linkedin.com/in/dharinpandya" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn" title="LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                  <a href="mailto:dharinpandya.24.cse@iite.indusuni.ac.in" class="social-icon-btn" aria-label="Email" title="Email">
+                    <i class="bi bi-envelope-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Form (Right Column) -->
+            <div class="col-lg-7">
+              <div class="contact-form-card">
+                <h3 class="h4 mb-3">Send a Message</h3>
+                <form id="contactForm" novalidate>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="contactName" class="form-label">Full Name *</label>
+                      <input type="text" class="form-control" id="contactName" placeholder="e.g. Alex Morgan" required />
+                      <div class="invalid-feedback">Please provide your name (min 2 characters).</div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="contactEmail" class="form-label">Email Address *</label>
+                      <input type="email" class="form-control" id="contactEmail" placeholder="e.g. alex@example.com" required />
+                      <div class="invalid-feedback">Please enter a valid email address.</div>
+                    </div>
+                    <div class="col-12">
+                      <label for="contactSubject" class="form-label">Subject *</label>
+                      <input type="text" class="form-control" id="contactSubject" placeholder="e.g. Fresher Role / Project Discussion" required />
+                      <div class="invalid-feedback">Please specify a subject (min 3 characters).</div>
+                    </div>
+                    <div class="col-12">
+                      <label for="contactMessage" class="form-label">Message *</label>
+                      <textarea class="form-control" id="contactMessage" rows="5" placeholder="Write your message here..." required></textarea>
+                      <div class="invalid-feedback">Please write a message with at least 10 characters.</div>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" id="contactSubmitBtn" class="btn-custom btn-primary-gradient w-100">
+                        <i class="bi bi-send-fill"></i> Send Message
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-5">
+            <a class="navbar-brand mb-2 d-inline-block" href="#home">
+              Dharin<span class="gradient-text">.dev</span>
+            </a>
+            <p class="text-secondary small mb-0" style="max-width: 380px;">
+              Computer Science &amp; Engineering Student at IITE, Indus University, Ahmedabad. Building web projects and algorithmic solutions with clean code.
+            </p>
+          </div>
+          <div class="col-lg-7">
+            <div class="d-flex flex-wrap justify-content-lg-end gap-3">
+              <ul class="footer-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#certificates-projects">Certificates &amp; Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://github.com/DharinPandya" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> GitHub</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            &copy; <span id="currentYear">2026</span> Dharin Pandya. All rights reserved.
+          </div>
+          <div class="text-muted">
+            Crafted with HTML5, CSS3, Bootstrap 5 &amp; Vanilla JavaScript
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Back to Top Button -->
+    <button type="button" id="btnBackToTop" class="btn-back-to-top" aria-label="Scroll back to top">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Project Details Bootstrap 5 Modal -->
+    <div class="modal fade" id="projectDetailsModal" tabindex="-1" aria-labelledby="modalProjectTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <span id="modalProjectCategory" class="project-category d-block">Category</span>
+              <h3 class="modal-title h4 mb-0" id="modalProjectTitle">Project Title</h3>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Project Visual Banner -->
+            <div id="modalProjectBanner" class="rounded overflow-hidden mb-4" style="aspect-ratio: 16/9; background: var(--bg-card);"></div>
+
+            <!-- Overview -->
+            <div class="mb-4">
+              <h4 class="h5 mb-2">Project Overview</h4>
+              <p id="modalProjectOverview" class="text-secondary mb-0"></p>
+            </div>
+
+            <!-- Problem vs Solution -->
+            <div class="row g-3 mb-4">
+              <div class="col-md-6">
+                <div class="p-3 rounded" style="background: var(--bg-card); border: 1px solid var(--border-subtle);">
+                  <h5 class="h6 text-danger"><i class="bi bi-exclamation-octagon-fill me-1"></i> Technical Challenge</h5>
+                  <p id="modalProjectProblem" class="small text-secondary mb-0"></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3 rounded" style="background: var(--bg-card); border: 1px solid var(--border-subtle);">
+                  <h5 class="h6 text-success"><i class="bi bi-check-circle-fill me-1"></i> Solution &amp; Approach</h5>
+                  <p id="modalProjectSolution" class="small text-secondary mb-0"></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Key Features -->
+            <div class="mb-4">
+              <h4 class="h5 mb-2">Key Highlights &amp; Capabilities</h4>
+              <ul id="modalProjectFeatures" class="list-unstyled ps-0"></ul>
+            </div>
+
+            <!-- Technologies -->
+            <div>
+              <h4 class="h5 mb-2">Technologies Used</h4>
+              <div id="modalProjectTags" class="d-flex flex-wrap gap-2"></div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-custom btn-glass btn-sm-custom" data-bs-dismiss="modal">Close</button>
+            <a id="modalProjectRepo" href="https://github.com/DharinPandya" target="_blank" rel="noopener noreferrer" class="btn-custom btn-primary-gradient btn-sm-custom">
+              <i class="bi bi-github"></i> View GitHub Repository
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Bottom Navigation Dock (Fixed at bottom on mobile only, exactly matching reference design) -->
+    <nav class="mobile-bottom-nav" id="mobileBottomNav" aria-label="Mobile Navigation">
+      <a href="#home" class="mobile-nav-item active" data-nav-target="home">
+        <div class="mobile-nav-icon-wrapper">
+          <i class="bi bi-house-door-fill"></i>
+        </div>
+        <span class="mobile-nav-label">Home</span>
+      </a>
+      <a href="#about" class="mobile-nav-item" data-nav-target="about">
+        <div class="mobile-nav-icon-wrapper">
+          <i class="bi bi-person-fill"></i>
+        </div>
+        <span class="mobile-nav-label">About</span>
+      </a>
+      <a href="#skills" class="mobile-nav-item" data-nav-target="skills">
+        <div class="mobile-nav-icon-wrapper">
+          <i class="bi bi-code-slash"></i>
+        </div>
+        <span class="mobile-nav-label">Skills</span>
+      </a>
+      <a href="#certificates-projects" class="mobile-nav-item" data-nav-target="certificates-projects">
+        <div class="mobile-nav-icon-wrapper">
+          <i class="bi bi-folder-fill"></i>
+        </div>
+        <span class="mobile-nav-label">Projects</span>
+      </a>
+      <a href="#education" class="mobile-nav-item" data-nav-target="education">
+        <div class="mobile-nav-icon-wrapper">
+          <i class="bi bi-mortarboard-fill"></i>
+        </div>
+        <span class="mobile-nav-label">Education</span>
+      </a>
+      <a href="#contact" class="mobile-nav-item" data-nav-target="contact">
+        <div class="mobile-nav-icon-wrapper">
+          <i class="bi bi-chat-dots-fill"></i>
+        </div>
+        <span class="mobile-nav-label">Contact</span>
+      </a>
+    </nav>
+
+    <!-- Bootstrap 5.3.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Custom Modular Vanilla JS -->
+    <script type="module" src="/js/script.js"></script>
+  </body>
+</html>
